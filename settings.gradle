@@ -1,0 +1,4 @@
+rootProject.name = "springboot-rsocket-stream-overflow"
+
+include "springboot-rsocket-service"
+include "stream-overflow-client"
