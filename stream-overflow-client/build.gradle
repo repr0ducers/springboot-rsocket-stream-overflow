@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
     /*used for TaggingMetadataCodec.createRoutingMetadata*/
-    implementation "io.rsocket:rsocket-core:1.1.2"
+    implementation "io.rsocket:rsocket-core:1.1.3"
 
     implementation "io.netty:netty-buffer:4.1.80.Final"
     implementation "io.netty:netty-codec:4.1.80.Final"
