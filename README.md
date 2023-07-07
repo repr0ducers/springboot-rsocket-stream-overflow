@@ -2,12 +2,12 @@
 
 ### DESCRIPTION
 
-Most recent release of RSocket/RSocket-java [1.1.3](https://github.com/rsocket/rsocket-java/releases/tag/1.1.3) integration 
-from spring-boot ([3.0.5](https://docs.spring.io/spring-framework/docs/current/reference/html/rsocket.html) and 2.7.10) 
-is affected by denial-of-service with stream memory overflow.
+GA releases of RSocket/RSocket-java 1.0.0 - [1.1.4](https://github.com/rsocket/rsocket-java/releases/tag/1.1.4) provided by  
+spring-boot ([3.0.0 - current 3.1.1](https://docs.spring.io/spring-framework/reference/rsocket.html) and 2.2.8 - current 2.7.13) are affected by 
+denial-of-service with stream memory overflow.
 
 RSocket as protocol relies on Reactive Streams for message flow control — for streaming interactions (request-stream in particular), 
-responder is not allowed to push more messages than requested by peer with REQUEST_N frame.
+responder is not allowed to produce more messages than requested by peer with REQUEST_N frame.
 
 However, RSocket/RSocket-java does not enforce flow control - endpoints are allowed to produce more than their peers agreed to consume.
 
@@ -24,7 +24,7 @@ with request messages It did not asked for with REQUEST_N.
 
 ### PREREQUISITES
 
-jdk 8+
+jdk 8+ for spring-boot2, jdk 17 for for spring-boot3.
 
 ### SETUP
 
