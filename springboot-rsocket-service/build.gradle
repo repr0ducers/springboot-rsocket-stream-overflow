@@ -4,10 +4,11 @@ plugins {
     id "io.spring.dependency-management"
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 17
 
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-rsocket"
+    implementation "io.rsocket:rsocket-core:1.1.4"
 }
 
 mainClassName = "example.service.Main"
