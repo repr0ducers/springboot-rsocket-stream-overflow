@@ -3,7 +3,7 @@
 ### DESCRIPTION
 
 GA releases of RSocket/RSocket-java 1.0.0 - [1.1.4](https://github.com/rsocket/rsocket-java/releases/tag/1.1.4) provided by  
-spring-boot ([3.0.0 - current 3.1.1](https://docs.spring.io/spring-framework/reference/rsocket.html) and 2.2.8 - current 2.7.13) are affected by 
+spring-boot ([3.0.0 - current 3.1.3](https://docs.spring.io/spring-framework/reference/rsocket.html) and 2.2.8 - current 2.7.15) are affected by 
 denial-of-service with stream memory overflow.
 
 RSocket as protocol relies on Reactive Streams for message flow control — for streaming interactions (request-stream in particular), 
